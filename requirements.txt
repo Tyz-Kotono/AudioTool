@@ -1,0 +1,13 @@
+autobahn==24.4.2
+cffi==1.17.1
+cryptography==44.0.3
+hyperlink==21.0.0
+idna==3.10
+pycparser==2.22
+PySide6==6.9.0
+PySide6_Addons==6.9.0
+PySide6_Essentials==6.9.0
+setuptools==80.7.1
+shiboken6==6.9.0
+txaio==23.1.1
+waapi-client==0.7.2

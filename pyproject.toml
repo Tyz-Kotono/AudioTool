@@ -1,0 +1,27 @@
+﻿[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiotool"
+version = "0.1.0"
+description = "Audio tool integration with Wwise"
+authors = [{name="Your Name", email="your@email.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PySide6>=6.5.0",
+    "wwise-sdk>=2023.1"  # 根据实际需求调整
+]
+
+[tool.setuptools]
+packages = ["audiotool"]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.package-data]
+audiotool = ["*.md", "*.ui"]  # 包含界面文件等
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+dev = ["black", "mypy"]
