@@ -6,5 +6,5 @@ class ModuleRules(ABC):
         self.info = {}  # 每个插件自己的信息字典
 
     @abstractmethod
-    def draw(self):
+    def Open(self):
         pass

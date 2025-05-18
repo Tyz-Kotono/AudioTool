@@ -1,19 +1,18 @@
 from Module.Build import ModuleRules
-from .WwiseCore import main
 
-class WwiseModule(ModuleRules):
+class PluginB(ModuleRules):
     def __init__(self):
         super().__init__()
-        self.info["name"] = "Wwise"
+        self.info["name"] = "Example"
 
     def Open(self):
-        main()
+        print("Example drawing")
 
     def GetMenuLists(self):
         return {
-            "hook": "Wwise",
+            "hook": "Example",
             "Function": self.say_hello
         }
 
     def say_hello(self):
-        print("Wwise Wappi Base")
+        print("Hello from Example")

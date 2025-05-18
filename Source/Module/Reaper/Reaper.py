@@ -5,7 +5,7 @@ class PluginB(ModuleRules):
         super().__init__()
         self.info["name"] = "Reaper"
 
-    def draw(self):
+    def Open(self):
         print("Reaper drawing")
 
     def GetMenuLists(self):
